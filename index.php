@@ -40,7 +40,7 @@
             <li><a href="#course">Course</a></li>
             <li><a href="#teacher">Teacher</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="payment.html">Payment</a></li>
+            <li><a href="payment.php">Payment</a></li>
         </ul>
     </nav>
 
@@ -221,7 +221,7 @@
         </div>
         
     </div> 
-    <a href="course.html"><button class="btn" >more course</button></a>
+    <a href="course.php"><button class="btn" >more course</button></a>
 
 </div>
 <!-- <div class="courses">
