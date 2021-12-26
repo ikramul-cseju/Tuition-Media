@@ -51,14 +51,15 @@
                     <h4>Payment Gateway</h4>
                     <input type="radio" name="pay" class="radio" id="bc1" checked>
                     <label for="bc1"><span>
-                            <i class="fa fa-cc-visa"></i> Bkash</span></label>
+                            Bkash</span></label>
                     <input type="radio" name="pay" class="radio" id="bc2">
                     <label for="bc2"><span>
-                            <i class="fa fa-cc-paypal"></i> Nagad</span></label>
+                           Nagad</span></label>
 
                     <input type="radio" name="pay" class="radio" id="bc3">
                     <label for="bc3"><span>
-                            <i class="fa fa-cc-paypal"></i> Gpay</span></label>
+                           Rocket</span></label>
+
                 </div>
             </div>
             <div class="input_group">
