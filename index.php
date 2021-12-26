@@ -368,8 +368,8 @@
 
         <div class="box">
             <h3>Important links</h3>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="privacy.html">Terms & Condition</a>
+            <a href="privacy.php">Privacy Policy</a>
+            <a href="privacy.php">Terms & Condition</a>
             
         </div>
 
