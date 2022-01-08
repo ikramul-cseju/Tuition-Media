@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Registration Form</title>
 	<link rel="stylesheet" href="/css/regstyle.css">
+  <link rel="stylesheet" href="/css/payment.css">
 </head>
 <body>
 
@@ -14,8 +15,12 @@
     </div>
     
     <div class="form">
+
+      <!-- REGISTER FORM start here -->
+      <!-- Every name is meaningful here.It may help you.-->
+
     <form action="register" method="post">
-    @csrf
+    @csrf 
         <div class="inputfield">
             <label>User Type</label>
             <div class="custom_select">
@@ -69,7 +74,8 @@
           <label>Address</label>
           <textarea class="textarea" name="address"></textarea>
        </div> 
-     
+
+       <!--terms and conditions button -->
       <div class="inputfield terms">
           <label class="check">
             <input type="checkbox" required>
@@ -77,12 +83,15 @@
           </label>
           <p>Agreed to terms and conditions</p>
        </div> 
+
+       <!--submit button -->
        <div class="input_group">
                 <div class="input_box">
-                    <button type="submit">Register NOW</button>
+                    <button type="submit">Register NOW</button>  
                 </div>
             </div>
     </form>
+     <!-- REGISTER FORM ends here -->
     </div>
 </div>	
 	
