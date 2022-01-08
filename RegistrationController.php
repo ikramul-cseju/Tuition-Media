@@ -7,9 +7,11 @@ use App\Models\Registration;
 
 class RegistrationController extends Controller
 {
-    //
+    //function for inserting registration details in the database
     function registrationData(Request $req)
     {
+        //variable for registrations table in databse
+
         $registration= new Registration;
         $registration->user_type=$req->user_type;
         $registration->f_name=$req->f_name;
@@ -22,21 +24,15 @@ class RegistrationController extends Controller
         $registration->institution=$req->institution;
         $registration->address=$req->address;
 
+        //checking 'password' and 'confirm password' is equal or not
         if($registration->password==$registration->c_password){
-            
             $registration->save();
-            echo '<script>alert("Registration Succesfull!!!!!!!")</script>';
+            echo '<script>alert("Registration Succesfull!!!!!!!")</script>';//inline javascript with php
             return  view('index');
-
         }
         else{
-            echo '<script>alert("Password does not match!!!!!!!")</script>';
-  
+            echo '<script>alert("Password does not match!!!!!!!")</script>';//inline javascript with php
             return  view('register');
         }
-
-   
-
-
     }
 }
