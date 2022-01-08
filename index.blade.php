@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JU Tuition Media System</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
@@ -31,7 +31,7 @@
 
     <div id="menu" class="fas fa-bars"></div>
 
-    <img src="image/logo.jpg" width="90px" height="70px" alt="LOGO">
+    <img src="/image/logo.jpg" width="90px" height="70px" alt="LOGO">
 
     <nav class="navbar">
         <ul>
@@ -40,7 +40,7 @@
             <li><a href="#course">Course</a></li>
             <li><a href="#teacher">Teacher</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="payment.php">Payment</a></li>
+            <li><a href="{{url('/payment')}}">Payment</a></li>
         </ul>
     </nav>
 
@@ -59,8 +59,8 @@
 
     <h1>JU Tuition Media</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum neque aliquid similique error velit placeat vitae accusantium est nam magnam?</p>
-    <a href="login.html"><button class="btn">Be  Tutor</button></a>
-    <a href="login.html"><button class="btn">Get tutor</button></a>
+    <a href="{{url('/login')}}"><button class="btn">Be  Tutor</button></a>
+    <a href="{{url('/login')}}"><button class="btn">Get tutor</button></a>
 
     <div class="shape"></div>
 
@@ -221,7 +221,7 @@
         </div>
         
     </div> 
-    <a href="course.php"><button class="btn" >more course</button></a>
+    <a href="{{url('/course')}}"><button class="btn" >more course</button></a>
 
 </div>
 <!-- <div class="courses">
@@ -325,7 +325,7 @@
         </div>
     </div>
 
-    <a href="#"><button class="btn" >more </button></a>
+    <a href="{{url('/teacher')}}"><button class="btn" >more </button></a>
 
 </div>
 </section>
@@ -341,12 +341,12 @@
 
 <div class="row">
 
-    <form action="">
-        <input type="text" placeholder="full name" class="box">
-        <input type="email" placeholder="your email" class="box">
+    <form action="https://formsubmit.co/492b5601ca4396514416060d18735dac" method="POST">
+        <input type="text" placeholder="full name"  class="box" name="name">
+        <input type="email" placeholder="your email" class="box" name="email">
        
-        <input type="number" placeholder="your number" class="box">
-        <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="your address"></textarea>
+        <input type="number" placeholder="your number" name="number" class="box">
+        <textarea name="message" id="" cols="30" rows="10" class="box address" placeholder="your message" ></textarea>
         <input type="submit" class="btn" value="send now">
     </form>
 
@@ -368,18 +368,18 @@
 
         <div class="box">
             <h3>Important links</h3>
-            <a href="privacy.php">Privacy Policy</a>
-            <a href="privacy.php">Terms & Condition</a>
+            <a href="{{url('/privacy')}}">Privacy Policy</a>
+            <a href="{{url('/privacy')}}">Terms & Condition</a>
             
         </div>
 
         <div class="box">
             <h3>Quick links</h3>
-            <a href="#">home</a>
-            <a href="#">about</a>
-            <a href="#">course</a>
-            <a href="#">teachers</a>
-            <a href="#">contact</a>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#course">course</a>
+            <a href="#teacher">teachers</a>
+            <a href="#contact">contact</a>
         </div>
 
         <div class="box">

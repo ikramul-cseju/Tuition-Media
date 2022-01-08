@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Form </title>
-    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="/css/payment.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="wrapper">
         <h2>Payment Form</h2>
-        <form action="" method="post">
+        <form action="payment" method="post">
+        @csrf
             <!--Account Information Start-->
             <h3 style="color: black;">Account</h3>
             <div class="input_group">
@@ -49,14 +50,14 @@
             <div class="input_group">
                 <div class="input_box">
                     <h4>Payment Gateway</h4>
-                    <input type="radio" name="pay" class="radio" id="bc1" checked>
+                    <input type="radio" name="gateway" class="radio" id="bc1" checked>
                     <label for="bc1"><span>
                             Bkash</span></label>
-                    <input type="radio" name="pay" class="radio" id="bc2">
+                    <input type="radio" name="gateway" class="radio" id="bc2">
                     <label for="bc2"><span>
                            Nagad</span></label>
 
-                    <input type="radio" name="pay" class="radio" id="bc3">
+                    <input type="radio" name="gateway" class="radio" id="bc3">
                     <label for="bc3"><span>
                            Rocket</span></label>
 
@@ -64,7 +65,7 @@
             </div>
             <div class="input_group">
                 <div class="input_box">
-                    <input type="tel" name="bkash" class="name" placeholder="Bkash/Nagad no" required>
+                    <input type="tel" name="pay_no" class="name" placeholder="Bkash/Nagad no" required>
                     <i class="fa fa-credit-card icon"></i>
                 </div>
             </div>
