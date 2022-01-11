@@ -23,7 +23,7 @@ class PaymentController extends Controller
         $payment->save();
 
         
-        echo '<script>alert("Payment Succesfull!!!!!!!")</script>'; //inline javascript with php
+        echo '<script>alert("Payment Succesfull!!!!!!!")</script>'; //inline javascript for alert
         
         return view('index');
 
