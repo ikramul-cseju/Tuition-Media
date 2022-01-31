@@ -39,7 +39,7 @@ class PaymentController extends Controller
 
 ```
 
-##Model
+## Model
 1. Payment.php
 
 ```php 
