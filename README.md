@@ -1,12 +1,24 @@
 # Payment
+
+---
+- [Description](#section-1)
+- [Active Controllers](#section-2)
+- [Methods](#section-3)
+- [Models](#section-4)
+- [Views-Route](#section-5)
+
+
+<a name="section-1"></a>
 ## Description
 
 Here we implements the payment feature where teachers can contact with the authority.
-Teacher can fill up a form and submit this with there payment details.<br>
-
+Teacher can fill up a form and submit this with there payment details.<br
+                                                                          >
+<a name="section-2"></a>
 ## Active Controller
 1. PaymentController.php
 
+<a name="section-3></a>
 ## Method
 1. `payData() : Returns view of 'index';`
 
@@ -39,6 +51,7 @@ class PaymentController extends Controller
 
 ```
 
+<a name="section-4></a>                                                       
 ## Model
 1. Payment.php
 
@@ -53,7 +66,7 @@ class Payment extends Model
 }
 
 ```
-
+<a name="section-5></a>
 ## Views-Route
 
 | __#__       | __Request Type__ | __Paths__  |  __Action__ |__Route Name__ |
