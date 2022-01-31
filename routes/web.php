@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RequestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,32 +14,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
+});*/
+Route::get('/', function () {
+    return view('index');
 });
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/index', [App\Http\Controllers\HomeController::class, 'homeindex']);
-
-
 Route::get('payment', function () {
     return view('payment');
 });
-Route::post('payment',[PaymentController::class,'payData']);
-
-
-
+Route::get('login', function () {
+    return view('login');
+});
 Route::get('course', function () {
     return view('course');
-});
-Route::get('teacher', function () {
-    return view('teacher');
 });
 Route::get('privacy', function () {
     return view('privacy');
 });
+Route::get('register', function () {
+    return view('register');
+});
 
-
-
+Route::get('request', function () {
+    return view('request');
+});
+Route::post('request', [ RequestController::class, 'addData' ] );
