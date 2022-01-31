@@ -50,14 +50,14 @@
             <div class="input_group">
                 <div class="input_box">
                     <h4>Payment Gateway</h4>
-                    <input type="radio" name="gateway" class="radio" id="bc1" checked>
+                    <input type="radio" name="gateway" value="bkash" class="radio" id="bc1" checked>
                     <label for="bc1"><span>
                             Bkash</span></label>
-                    <input type="radio" name="gateway" class="radio" id="bc2">
+                    <input type="radio" name="gateway" value="nagad" class="radio" id="bc2">
                     <label for="bc2"><span>
                            Nagad</span></label>
 
-                    <input type="radio" name="gateway" class="radio" id="bc3">
+                    <input type="radio" name="gateway" value="rocket" class="radio" id="bc3">
                     <label for="bc3"><span>
                            Rocket</span></label>
 
@@ -77,7 +77,7 @@
             </div>
             <div class="input_group">
                 <div class="input_box">
-                    <input type="tel" name="amount" class="name" placeholder="Enter amount" required>
+                    <input type="number" name="amount" class="name" placeholder="Enter amount" required>
                     <i class="fa fa-user icon"></i>
                 </div>
             </div>
