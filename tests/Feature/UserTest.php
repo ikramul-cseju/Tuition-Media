@@ -13,10 +13,52 @@ class UserTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
-    {
-        $response = $this->get('/');
+ //database testing1
+ public function test_db()
+ {
+    $this->assertDatabaseHas('users',[
+        'email'=>'emonju330@gmail.com'
 
-        $response->assertStatus(200);
-    }
+    ]);
+ }
+
+ //database testing2
+ public function test_db2()
+ {
+    $this->assertDatabaseHas('payments',[
+        'name'=>'Robin'
+
+    ]);
+ }
+
+  //database testing2
+  public function test_db3()
+  {
+     $this->assertDatabaseHas('users',[
+         'user_id'=>'emon330'
+ 
+     ]);
+  }
+
+//for payment
+ public function test_payData()
+ {
+     $response = $this->post('/payment', [
+
+         'name' => 'Al Imran',
+         'email' => 'imran@gmail.com',
+         'address' => 'savar,dhaka',
+         'teacher_id' => 'imrann3',
+         'gateway' => 'nagad',
+         'pay_no' => '01887656432',
+         'trnx' => 'xhjfyw2',
+         'amount' => '1500'
+
+
+
+     ]);
+     $response->assertRedirect('index');
+ }
+
+
 }
