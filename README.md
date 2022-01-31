@@ -56,9 +56,10 @@ class Payment extends Model
 
 ## Views-Route
 
-| # | Request type   | Path |  Action | Route Name |
-| : |   :-   |  :  | : | : |
-| 1 | GET  | /payment  | Pay Now | payData |
-| 2 | POST  | /payment | Payment | payment |
+| __#__       | __Request Type__ | __Paths__  |  __Action__ |__Route Name__ |
+|-------------|------------------|----------  |-------------|---------------|
+| 1           | GET              | /payment   | Pay Now     |payData        |
+| 2           | POST             | /payment   | Payment     |payment        |
+
 
 
